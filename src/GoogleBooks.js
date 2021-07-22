@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 function GoogleBooks() {
     const [book, setBook] = useState("");
     const [result, setResult] = useState([]);
-    const [apiKey, setApiKey] = useState("AIzaSyCqC1suIcncgSJZbHnOHLEAoGWyCDbQFKE");
+    const [apiKey, setApiKey] = useState(process.env.REACT_BOOKS_API_KEY);
 
     function handleChange(event) {
         const book = event.target.value;
